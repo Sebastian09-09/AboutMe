@@ -66,3 +66,70 @@ li{
 a{
     text-decoration: none;
 }
+
+.tag{
+    height: 22px;
+    width: 100px;
+    border: 2px black solid;
+    display: inline-block;
+    margin: 2px;
+}
+
+.text{
+    padding: 2px;
+    font-size: 20px;
+    color: #000000;
+    display: inline;
+}
+
+#python{
+    background-color: #ffde54;
+}
+
+#html{
+    background-color: #e44d27 ;
+}
+
+#js{
+    background-color: #f7df1e;
+}
+
+#css{
+    background-color: #3798d7;
+}
+
+#sql{
+    background-color: #0179d7;
+}
+
+#go{
+    background-color: #00abd7; 
+}
+
+#bash{
+    background-color: #4dab20;
+}
+
+#git{
+    background-color: #f34e28;
+}
+
+#github{
+    background-color: #fefffe;
+}
+
+#sololearn{
+    background-color: #2d3846;
+}
+
+#stackoverflow{
+    background-color: #f2740d;
+}
+
+#youtube{
+    background-color: #ff0000;
+}
+
+#gmail{
+    background-color: #1a72e9;
+}
