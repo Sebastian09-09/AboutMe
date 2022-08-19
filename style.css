@@ -6,8 +6,16 @@ body{
     font-family: monospace;
     margin: auto;
     width: 640px;
+    animation: gradient 5s infinite;
     background-color: rgb(30, 30, 30);
     background-image: linear-gradient(90deg,#4568dc  , #b06ab3);
+    background-size: 200% 200%;
+}
+
+@keyframes gradient {
+    0%{background-position:10% 21%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 21%}
 }
 
 #pfp{
@@ -16,7 +24,7 @@ body{
     display: block;
     margin: 20px auto;
     filter: blur(3px);
-    border: 3px #d5daeb solid;
+    border: 5px #d5daeb solid;
     transition:filter 700ms ease;
 }
 
@@ -26,11 +34,11 @@ body{
 
 
 #title{
+    text-align: center;
     font-size: 50px;
     padding: 10px;
     color: #d5daeb;
     text-shadow: 3px  3px  black;
-    text-align: center;
 }
 
 #sub-title{
@@ -70,6 +78,13 @@ a{
     border: 2px black solid;
     display: inline-block;
     margin: 2px 0;
+    box-shadow:inset -15px 0px 0px #fff;
+    cursor: pointer;
+    transition: box-shadow 300ms ease;
+}
+
+.tag:hover{
+    box-shadow:inset 0px 0px 0px #fff;
 }
 
 .text{
@@ -112,17 +127,17 @@ a{
 }
 
 #github{
-    background-color: #fefffe;
+    background-color: #464646;
 }
 
 #sololearn{
     background-color: #2d3846;
-    width: 110px;
+    width: 120px;
 }
 
 #stackoverflow{
     background-color: #f2740d;
-    width: 155px;
+    width: 163px;
 }
 
 #youtube{
@@ -135,7 +150,7 @@ a{
 
 #as{
     background-color: #00d752;
-    width: 165px;
+    width: 174px;
 }
 
 #pyting{
@@ -144,7 +159,7 @@ a{
 
 #tw{
     background-color: #00ccff;
-    width: 187px;
+    width: 195px;
 }
 
 /*Scroll Bar*/
