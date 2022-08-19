@@ -8,24 +8,24 @@ body{
     width: 640px;
     animation: gradient 5s infinite;
     background-color: rgb(30, 30, 30);
-    background-image: linear-gradient(90deg,#4568dc  , #b06ab3);
+    background-image: linear-gradient(118deg,#4568dc  , #b06ab3);
     background-size: 200% 200%;
 }
 
 @keyframes gradient {
-    0%{background-position:10% 21%} 
+    0%{background-position:10% 0%} 
     50%{background-position:91% 100%}
-    100%{background-position:10% 21%}
+    100%{background-position:10% 0%}
 }
 
 #pfp{
     border-radius: 50%;
-    height: 300px;
+    height: 250px;
     display: block;
     margin: 20px auto;
     filter: blur(3px);
     border: 5px #d5daeb solid;
-    transition:filter 700ms ease;
+    transition:filter 500ms ease ;
 }
 
 #pfp:hover{
@@ -80,11 +80,24 @@ a{
     margin: 2px 0;
     box-shadow:inset -15px 0px 0px #fff;
     cursor: pointer;
-    transition: box-shadow 300ms ease;
+    animation: dance 2s infinite;
+    transition: box-shadow 300ms ease , animation 300ms ease;
 }
 
 .tag:hover{
     box-shadow:inset 0px 0px 0px #fff;
+    animation-play-state: paused;
+}
+
+@keyframes dance {
+    0% {box-shadow:inset -15px 0px 0px #fff;}
+    20% {box-shadow:inset -12px 0px 0px #fff;}
+    50% {box-shadow:inset -18px 0px 0px #fff;}
+    60% {box-shadow:inset -9px 0px 0px #fff;}
+    70% {box-shadow:inset 0px 0px 0px #fff;}
+    70% {box-shadow:inset 0px 0px 0px #fff;}
+    90% {box-shadow:inset -18px 0px 0px #fff;}
+    100% {box-shadow:inset -15px 0px 0px #fff;}
 }
 
 .text{
