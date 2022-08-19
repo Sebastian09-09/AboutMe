@@ -72,7 +72,7 @@ a{
     width: 100px;
     border: 2px black solid;
     display: inline-block;
-    margin: 2px;
+    margin: 2px 0;
 }
 
 .text{
