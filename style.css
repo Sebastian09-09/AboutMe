@@ -13,7 +13,7 @@ body{
 }
 
 @keyframes gradient {
-    0%{background-position:10% 21%}
+    0%{background-position:10% 21%} 
     50%{background-position:91% 100%}
     100%{background-position:10% 21%}
 }
