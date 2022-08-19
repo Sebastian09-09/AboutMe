@@ -19,3 +19,14 @@ function loadLinks(){
         document.getElementById("links").style.display = "none";
     }
 };
+
+function loadProjects(){
+    var project = document.getElementById("project").innerHTML;
+    if (project == "👉 Projects"){
+        document.getElementById("project").innerHTML = "👇 Projects";
+        document.getElementById("projects").style.display = "block";
+    }else{
+        document.getElementById("project").innerHTML = "👉 Projects";
+        document.getElementById("projects").style.display = "none";
+    }
+};

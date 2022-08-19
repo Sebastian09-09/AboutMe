@@ -1,8 +1,11 @@
+html{
+    border: 10px #d5daeb solid;
+}
+
 body{
     font-family: monospace;
-    border: 10px #d5daeb solid;
-    margin: 0px;
-    padding: 0px 100px;
+    margin: auto;
+    width: 640px;
     background-color: rgb(30, 30, 30);
     background-image: linear-gradient(90deg,#4568dc  , #b06ab3);
 }
@@ -10,9 +13,8 @@ body{
 #pfp{
     border-radius: 50%;
     height: 300px;
-    position: relative;
-    top: 50%;
-    transform: translate(20%,-50%);
+    display: block;
+    margin: 20px auto;
     filter: blur(3px);
     border: 3px #d5daeb solid;
     transition:filter 700ms ease;
@@ -22,12 +24,6 @@ body{
     filter: blur(0);
 }
 
-#side{
-    position: absolute;
-    top: 50%;
-    right: 30%;
-    transform: translate(30%,-50%);
-}
 
 #title{
     font-size: 50px;
@@ -120,10 +116,12 @@ a{
 
 #sololearn{
     background-color: #2d3846;
+    width: 110px;
 }
 
 #stackoverflow{
     background-color: #f2740d;
+    width: 155px;
 }
 
 #youtube{
@@ -133,3 +131,35 @@ a{
 #gmail{
     background-color: #1a72e9;
 }
+
+#as{
+    background-color: #00d752;
+    width: 165px;
+}
+
+#pyting{
+    background-color: #a84ecc;
+}
+
+#tw{
+    background-color: #00ccff;
+    width: 187px;
+}
+
+/*Scroll Bar*/
+::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 1px;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #d5daeb; 
+    border-radius: 1px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #4568dc; 
+  }
