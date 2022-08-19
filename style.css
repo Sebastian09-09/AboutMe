@@ -25,8 +25,8 @@ body{
 #side{
     position: absolute;
     top: 50%;
-    right: 35%;
-    transform: translate(35%,-50%);
+    right: 30%;
+    transform: translate(30%,-50%);
 }
 
 #title{
