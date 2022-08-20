@@ -50,6 +50,7 @@ body{
     font-size: 30px;
     color: #d5daeb;
     text-shadow: 3px  3px  black;
+    display: block;
 }
 
 .drop-down:hover{
@@ -192,3 +193,60 @@ a{
   ::-webkit-scrollbar-thumb:hover {
     background: #4568dc; 
   }
+
+@media (max-width:800px){
+    #pfp{
+        filter: blur(0);
+    }
+}
+
+@media (max-width:650px){
+    body{
+        width: 400px;
+    }
+}
+
+@media (max-width:410px){
+    body{
+        width: 200px;
+    }
+    .drop-down{
+        font-size: 18px;
+    }
+    #title{
+        font-size: 22px;
+    }
+    #sub-title{
+        font-size: 16px;
+    }
+    #pfp{
+        height: 150px;
+    }
+    .text{
+        font-size: 16px;
+    }
+    .tag{
+        width: 70px ;
+    }
+    #github{
+        width: 77px;
+    }
+    #sololearn{
+        width: 104px;
+    }
+    #stackoverflow{
+        width: 138px;
+    }
+    #youtube{
+        width: 86px;
+    }
+    #as{
+        width: 146px;
+    }
+    #pyting{
+        width: 78px;
+    }
+    #tw{
+        width: 162px;
+    }
+}
