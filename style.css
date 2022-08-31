@@ -65,6 +65,30 @@ body{
     display: block;
 }
 
+#projects{
+    display: block;
+}
+
+.upWardAnimation{
+    /*animation: upWard 1s 1;*/
+    animation: upWard 500ms 1 forwards;
+}
+
+.downWardAnimation{
+    /*animation: downWard 1s 1;*/
+    animation: downWard 500ms 1 forwards;
+}
+
+@keyframes upWard {
+    from {margin-top: 13px;opacity: 1;visibility: visible;}
+    to {margin-top: -40px;opacity: 0;visibility: hidden;}
+}
+
+@keyframes downWard {
+    from {margin-top: -40px;opacity: 0;visibility: hidden;}
+    to {margin-top: 13px;opacity: 1;visibility: visible;}
+}
+
 li{
     display: inline;
 }
