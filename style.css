@@ -70,6 +70,20 @@ body{
     display: block;
 }
 
+
+#skill{
+    padding: 20px;
+    margin: 10px;
+}
+#link{
+    padding: 20px;
+    margin: 10px;
+}
+#project{
+    padding: 20px;
+    margin: 10px;
+}
+
 .upWardAnimation{
     /*animation: upWard 1s 1;*/
     animation: upWard 500ms 1 forwards;
@@ -231,11 +245,33 @@ a{
     body{
         width: 400px;
     }
+    @keyframes upWard {
+        0% {margin-top: 13px; opacity: 1;height: auto; visibility: visible;}
+        20% {height: 90px;}
+        100% {margin-top: -40px; opacity: 0;height: 13px; visibility: hidden;}
+    }
+    
+    @keyframes downWard {
+        0% {margin-top: -40px; opacity: 0;height: 13px; visibility: hidden;}
+        20% {height: 90px;}
+        100% {margin-top: 13px; opacity: 1;height: auto; visibility: visible;}
+    }
 }
 
 @media (max-width:410px){
     body{
         width: 200px;
+    }
+    @keyframes upWard {
+        0% {margin-top: 13px; opacity: 1;height: auto; visibility: visible;}
+        20% {height: 130px;}
+        100% {margin-top: -40px; opacity: 0;height: 13px; visibility: hidden;}
+    }
+    
+    @keyframes downWard {
+        0% {margin-top: -40px; opacity: 0;height: 13px; visibility: hidden;}
+        20% {height: 130px;}
+        100% {margin-top: 13px; opacity: 1;height: auto; visibility: visible;}
     }
     .drop-down{
         font-size: 18px;
