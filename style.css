@@ -82,13 +82,13 @@ body{
 
 @keyframes upWard {
     0% {margin-top: 13px; opacity: 1;height: auto; visibility: visible;}
-    50% {height: 60px;}
+    20% {height: 60px;}
     100% {margin-top: -40px; opacity: 0;height: 13px; visibility: hidden;}
 }
 
 @keyframes downWard {
     0% {margin-top: -40px; opacity: 0;height: 13px; visibility: hidden;}
-    50% {height: 60px;}
+    20% {height: 60px;}
     100% {margin-top: 13px; opacity: 1;height: auto; visibility: visible;}
 }
 
