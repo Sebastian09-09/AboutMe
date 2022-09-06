@@ -10,6 +10,7 @@ body{
     background-color: rgb(30, 30, 30);
     background-image: linear-gradient(118deg,#4568dc  , #b06ab3);
     background-size: 200% 200%;
+    user-select: none;
 }
 
 @keyframes gradient {
