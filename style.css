@@ -81,13 +81,15 @@ body{
 }
 
 @keyframes upWard {
-    from {margin-top: 13px;opacity: 1;visibility: visible;}
-    to {margin-top: -40px;opacity: 0;visibility: hidden;}
+    0% {margin-top: 13px; opacity: 1;height: auto; visibility: visible;}
+    50% {height: 60px;}
+    100% {margin-top: -40px; opacity: 0;height: 13px; visibility: hidden;}
 }
 
 @keyframes downWard {
-    from {margin-top: -40px;opacity: 0;visibility: hidden;}
-    to {margin-top: 13px;opacity: 1;visibility: visible;}
+    0% {margin-top: -40px; opacity: 0;height: 13px; visibility: hidden;}
+    50% {height: 60px;}
+    100% {margin-top: 13px; opacity: 1;height: auto; visibility: visible;}
 }
 
 li{
