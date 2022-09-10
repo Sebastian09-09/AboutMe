@@ -205,6 +205,24 @@ a{
     animation: changeBorderToLight 500ms 1 forwards;
 }
 
+@keyframes changepfpToDark{
+    from {border: 5px #d5daeb solid;}
+    to {border: 5px rgb(36, 36, 36) solid;}
+}
+
+@keyframes changepfpToLight{
+    from {border: 5px rgb(36, 36, 36) solid;}
+    to {border: 5px #d5daeb solid;}
+}
+
+.pfpDark{
+    animation: changepfpToDark 500ms 1 forwards;
+}
+
+.pfpLight{
+    animation: changepfpToLight 500ms 1 forwards;
+}
+
 #python{
     background-color: #ffde54;
 }
