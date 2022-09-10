@@ -1,5 +1,5 @@
-html{
-    border: 10px #d5daeb solid;
+#main{
+    border: 10px rgb(215,215,215) solid;
 }
 
 body{
@@ -147,6 +147,62 @@ a{
     font-size: 20px;
     color: #000000;
     display: inline;
+}
+
+#toggleBar{
+    margin: 20px 30px;
+    position: absolute;
+    top: 0;
+    border-radius: 60px;
+    height: 30px;
+    width: 55px;
+    background-color: gray;
+}
+
+#toggle{
+    cursor: pointer;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 60px;
+    background-color: rgb(215, 215, 215);
+}
+
+
+@keyframes toggleAnimationRight {
+    from {margin-left: 0px;background-color: rgb(215, 215, 215);}
+    to {margin-left: 30px;background-color: rgb(36, 36, 36);}
+}
+
+.toggleRight{
+    animation: toggleAnimationRight 500ms 1 forwards;
+}
+
+@keyframes toggleAnimationLeft {
+    from {margin-left: 30px;background-color: rgb(36, 36, 36);}
+    to {margin-left: 0px;background-color: rgb(215, 215, 215);}
+}
+
+.toggleLeft{
+    animation: toggleAnimationLeft 500ms 1 forwards;
+}
+
+@keyframes changeBorderToDark{
+    from {border: 10px rgb(215,215,215) solid;}
+    to {border: 10px rgb(36,36,36) solid;}
+}
+
+@keyframes changeBorderToLight{
+    from {border: 10px rgb(36,36,36) solid;}
+    to {border: 10px rgb(215,215,215) solid;}
+}
+
+.borderDark{
+    animation: changeBorderToDark 500ms 1 forwards;
+}
+
+.borderLight{
+    animation: changeBorderToLight 500ms 1 forwards;
 }
 
 #python{

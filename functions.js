@@ -30,3 +30,20 @@ function loadProjects(){
         document.getElementById('projects').className = 'upWardAnimation';
     }
 };
+
+function toggle(){
+    var toggleSwitch = document.getElementById("toggle");
+    var current = document.getElementById("toggle").className;
+    console.log(current)
+    if (current == "toggleRight"){
+        //toggleSwitch.style.marginLeft = "0px";
+        toggleSwitch.className = 'toggleLeft';
+        //document.getElementById("main").style.border = "10px rgb(215,215,215) solid"
+        document.getElementById("main").className = "borderLight";
+    }else{
+        //toggleSwitch.style.marginLeft = "30px";
+        toggleSwitch.className = 'toggleRight';
+        //document.getElementById("main").style.border = "10px rgb(36,36,36) solid"
+        document.getElementById("main").className = "borderDark";
+    }
+}
