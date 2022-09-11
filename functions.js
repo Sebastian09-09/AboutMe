@@ -34,21 +34,16 @@ function loadProjects(){
 function toggle(){
     var toggleSwitch = document.getElementById("toggle");
     var current = document.getElementById("toggle").className;
-    //const collection = document.getElementsByClassName("tag")
     if (current == "toggleRight"){
         toggleSwitch.className = 'toggleLeft';
         document.getElementById("main").className = "borderLight";
         document.body.style.backgroundImage = "linear-gradient(118deg,#4568dc  , #b06ab3)";
         document.getElementById("pfp").className = "pfpLight";
-        //document.getElementById("pfp").style.border = "5px #d5daeb solid";
-        //document.getElementsByClassName("tag").style.boxShadow = "inset -15px 0px 0px #fff";
 
     }else{
         toggleSwitch.className = 'toggleRight';
         document.getElementById("main").className = "borderDark";
         document.body.style.backgroundImage = "none";
         document.getElementById("pfp").className = "pfpDark";
-        //document.getElementById("pfp").style.border = "5px rgb(36,36,36) solid";
-        //document.getElementsByClassName("tag").style.boxShadow = "inset -15px 0px 0px rgb(36,36,36)";
     }
 }

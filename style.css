@@ -86,12 +86,12 @@ body{
 
 .upWardAnimation{
     /*animation: upWard 1s 1;*/
-    animation: upWard 500ms 1 forwards;
+    animation: upWard 400ms 1 forwards;
 }
 
 .downWardAnimation{
     /*animation: downWard 1s 1;*/
-    animation: downWard 500ms 1 forwards;
+    animation: downWard 400ms 1 forwards;
 }
 
 @keyframes upWard {
@@ -175,7 +175,7 @@ a{
 }
 
 .toggleRight{
-    animation: toggleAnimationRight 500ms 1 forwards;
+    animation: toggleAnimationRight 400ms 1 forwards;
 }
 
 @keyframes toggleAnimationLeft {
@@ -184,7 +184,7 @@ a{
 }
 
 .toggleLeft{
-    animation: toggleAnimationLeft 500ms 1 forwards;
+    animation: toggleAnimationLeft 400ms 1 forwards;
 }
 
 @keyframes changeBorderToDark{
@@ -198,11 +198,11 @@ a{
 }
 
 .borderDark{
-    animation: changeBorderToDark 500ms 1 forwards;
+    animation: changeBorderToDark 400ms 1 forwards;
 }
 
 .borderLight{
-    animation: changeBorderToLight 500ms 1 forwards;
+    animation: changeBorderToLight 400ms 1 forwards;
 }
 
 @keyframes changepfpToDark{
@@ -216,11 +216,11 @@ a{
 }
 
 .pfpDark{
-    animation: changepfpToDark 500ms 1 forwards;
+    animation: changepfpToDark 400ms 1 forwards;
 }
 
 .pfpLight{
-    animation: changepfpToLight 500ms 1 forwards;
+    animation: changepfpToLight 400ms 1 forwards;
 }
 
 #python{
