@@ -1,0 +1,393 @@
+#main{
+    border: 10px rgb(215,215,215) solid;
+}
+
+body{
+    font-family: monospace;
+    margin: auto;
+    width: 640px;
+    animation: gradient 5s infinite;
+    background-color: rgb(45, 45, 45);
+    background-image: linear-gradient(118deg,#4568dc  , #b06ab3);
+    background-size: 200% 200%;
+    user-select: none;
+}
+
+@keyframes gradient {
+    0%{background-position:10% 0%} 
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+
+#pfp{
+    border-radius: 50%;
+    height: 250px;
+    display: block;
+    margin: 20px auto;
+    filter: blur(3px);
+    border: 5px #d5daeb solid;
+    transition:filter 500ms ease ;
+}
+
+#pfp:hover{
+    filter: blur(0);
+}
+
+
+#title{
+    text-align: center;
+    font-size: 50px;
+    padding: 10px;
+    color: #d5daeb;
+    text-shadow: 3px  3px  black;
+}
+
+#sub-title{
+    font-size: 20px;
+}
+
+.drop-down{
+    padding: 10px;
+    font-size: 30px;
+    color: #d5daeb;
+    text-shadow: 3px  3px  black;
+    display: block;
+}
+
+.drop-down:hover{
+    cursor: pointer;
+}
+
+#skills{
+    display: block;
+}
+
+#links{
+    display: block;
+}
+
+#projects{
+    display: block;
+}
+
+
+#skill{
+    padding: 20px;
+    margin: 10px;
+}
+#link{
+    padding: 20px;
+    margin: 10px;
+}
+#project{
+    padding: 20px;
+    margin: 10px;
+}
+
+.upWardAnimation{
+    /*animation: upWard 1s 1;*/
+    animation: upWard 400ms 1 forwards;
+}
+
+.downWardAnimation{
+    /*animation: downWard 1s 1;*/
+    animation: downWard 400ms 1 forwards;
+}
+
+@keyframes upWard {
+    0% {margin-top: 13px; opacity: 1;height: auto; visibility: visible;}
+    20% {height: 60px;}
+    100% {margin-top: -40px; opacity: 0;height: 13px; visibility: hidden;}
+}
+
+@keyframes downWard {
+    0% {margin-top: -40px; opacity: 0;height: 13px; visibility: hidden;}
+    20% {height: 60px;}
+    100% {margin-top: 13px; opacity: 1;height: auto; visibility: visible;}
+}
+
+li{
+    display: inline;
+}
+
+a{
+    text-decoration: none;
+}
+
+.tag{
+    height: 22px;
+    width: 100px;
+    border: 2px black solid;
+    display: inline-block;
+    margin: 2px 0;
+    box-shadow:inset -15px 0px 0px #fff;
+    cursor: pointer;
+    animation: dance 2s infinite;
+    transition: box-shadow 300ms ease , animation 300ms ease;
+}
+
+.tag:hover{
+    box-shadow:inset 0px 0px 0px #fff;
+    animation-play-state: paused;
+}
+
+@keyframes dance {
+    0% {box-shadow:inset -15px 0px 0px #fff;}
+    20% {box-shadow:inset -12px 0px 0px #fff;}
+    50% {box-shadow:inset -18px 0px 0px #fff;}
+    60% {box-shadow:inset -9px 0px 0px #fff;}
+    70% {box-shadow:inset 0px 0px 0px #fff;}
+    70% {box-shadow:inset 0px 0px 0px #fff;}
+    90% {box-shadow:inset -18px 0px 0px #fff;}
+    100% {box-shadow:inset -15px 0px 0px #fff;}
+}
+
+.text{
+    padding: 2px;
+    font-size: 20px;
+    color: #000000;
+    display: inline;
+}
+
+#toggleBar{
+    margin: 20px 30px;
+    position: absolute;
+    top: 0;
+    border-radius: 60px;
+    height: 30px;
+    width: 55px;
+    background-color: gray;
+}
+
+#toggle{
+    cursor: pointer;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 60px;
+    background-color: rgb(215, 215, 215);
+}
+
+
+@keyframes toggleAnimationRight {
+    from {margin-left: 0px;background-color: rgb(215, 215, 215);}
+    to {margin-left: 30px;background-color: rgb(36, 36, 36);}
+}
+
+.toggleRight{
+    animation: toggleAnimationRight 400ms 1 forwards;
+}
+
+@keyframes toggleAnimationLeft {
+    from {margin-left: 30px;background-color: rgb(36, 36, 36);}
+    to {margin-left: 0px;background-color: rgb(215, 215, 215);}
+}
+
+.toggleLeft{
+    animation: toggleAnimationLeft 400ms 1 forwards;
+}
+
+@keyframes changeBorderToDark{
+    from {border: 10px rgb(215,215,215) solid;}
+    to {border: 10px rgb(36,36,36) solid;}
+}
+
+@keyframes changeBorderToLight{
+    from {border: 10px rgb(36,36,36) solid;}
+    to {border: 10px rgb(215,215,215) solid;}
+}
+
+.borderDark{
+    animation: changeBorderToDark 400ms 1 forwards;
+}
+
+.borderLight{
+    animation: changeBorderToLight 400ms 1 forwards;
+}
+
+@keyframes changepfpToDark{
+    from {border: 5px #d5daeb solid;}
+    to {border: 5px rgb(36, 36, 36) solid;}
+}
+
+@keyframes changepfpToLight{
+    from {border: 5px rgb(36, 36, 36) solid;}
+    to {border: 5px #d5daeb solid;}
+}
+
+.pfpDark{
+    animation: changepfpToDark 400ms 1 forwards;
+}
+
+.pfpLight{
+    animation: changepfpToLight 400ms 1 forwards;
+}
+
+#python{
+    background-color: #ffde54;
+}
+
+#html{
+    background-color: #e44d27 ;
+}
+
+#js{
+    background-color: #f7df1e;
+}
+
+#css{
+    background-color: #3798d7;
+}
+
+#sql{
+    background-color: #0179d7;
+}
+
+#go{
+    background-color: #00abd7; 
+}
+
+#bash{
+    background-color: #4dab20;
+}
+
+#git{
+    background-color: #f34e28;
+}
+
+#github{
+    background-color: #464646;
+}
+
+#sololearn{
+    background-color: #2d3846;
+    width: 120px;
+}
+
+#stackoverflow{
+    background-color: #f2740d;
+    width: 163px;
+}
+
+#youtube{
+    background-color: #ff0000;
+}
+
+#gmail{
+    background-color: #1a72e9;
+}
+
+#as{
+    background-color: #00d752;
+    width: 174px;
+}
+
+#pyting{
+    background-color: #a84ecc;
+}
+
+#tw{
+    background-color: #00ccff;
+    width: 110px;
+}
+
+/*Scroll Bar*/
+::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 1px;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #d5daeb; 
+    border-radius: 1px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #4568dc; 
+  }
+
+@media (max-width:800px){
+    #pfp{
+        filter: blur(0);
+    }
+}
+
+@media (max-width:650px){
+    body{
+        width: 400px;
+    }
+    @keyframes upWard {
+        0% {margin-top: 13px; opacity: 1;height: auto; visibility: visible;}
+        20% {height: 90px;}
+        100% {margin-top: -40px; opacity: 0;height: 13px; visibility: hidden;}
+    }
+    
+    @keyframes downWard {
+        0% {margin-top: -40px; opacity: 0;height: 13px; visibility: hidden;}
+        20% {height: 90px;}
+        100% {margin-top: 13px; opacity: 1;height: auto; visibility: visible;}
+    }
+}
+
+@media (max-width:410px){
+    body{
+        width: 200px;
+    }
+    #toggleBar{
+        position: relative;
+        margin: 0px 30px;
+    }
+    @keyframes upWard {
+        0% {margin-top: 13px; opacity: 1;height: auto; visibility: visible;}
+        20% {height: 130px;}
+        100% {margin-top: -40px; opacity: 0;height: 13px; visibility: hidden;}
+    }
+    
+    @keyframes downWard {
+        0% {margin-top: -40px; opacity: 0;height: 13px; visibility: hidden;}
+        20% {height: 130px;}
+        100% {margin-top: 13px; opacity: 1;height: auto; visibility: visible;}
+    }
+    .drop-down{
+        font-size: 18px;
+    }
+    #title{
+        font-size: 22px;
+    }
+    #sub-title{
+        font-size: 16px;
+    }
+    #pfp{
+        height: 150px;
+    }
+    .text{
+        font-size: 16px;
+    }
+    .tag{
+        width: 70px ;
+    }
+    #github{
+        width: 77px;
+    }
+    #sololearn{
+        width: 104px;
+    }
+    #stackoverflow{
+        width: 138px;
+    }
+    #youtube{
+        width: 86px;
+    }
+    #as{
+        width: 146px;
+    }
+    #pyting{
+        width: 78px;
+    }
+    #tw{
+        width: 92px;
+    }
+}

@@ -1,0 +1,56 @@
+<html id="main">
+    <head>
+        <title>
+            Sebastian
+        </title>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="unicorn.png">
+
+
+        <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body><br>
+        <div id="toggleBar"> <div id="toggle" onclick="toggle()" ></div> </div>
+        <img id="pfp" src="pfp.jpg" alt="profile picture">
+
+        <div>
+            <div id="title">Sebastian<br><div id="sub-title">viper.json</div></div>
+            <div class="drop-down" id="skill" onclick="loadSkills()">👇 Skills</div>
+            <ul id="skills">
+
+                <li><div id="python" class="tag"> <div class="text">Python</div> </div></li>
+                <li><div id="bash" class="tag"> <div  class="text">BASH</div> </div></li>
+                <li><div id="go" class="tag"> <div class="text">GO</div> </div></li>
+                <li><div id="sql"  class="tag"> <div class="text">SQL</div> </div></li>
+                <li><div id="git" class="tag"> <div  class="text">GIT</div> </div></li>
+                <li><div id="html" class="tag"> <div class="text">HTML</div> </div></li>
+                <li><div id="css" class="tag"> <div  class="text">CSS</div> </div></li>
+                <li><div id="js" class="tag"> <div  class="text">JS</div> </div></li>
+            </ul>
+            <div class="drop-down" id="link" onclick="loadLinks()">👇 Links</div>
+            <ul id="links">
+
+                <li><a href="https://github.com/Sebastian09-09" target="_blank"><div id="github" class="tag"> <div class="text">Github</div> </a></div></li>
+                <li><a href="https://www.sololearn.com/profile/19046633" target="_blank"><div id="sololearn" class="tag"> <div  class="text">SoloLearn</div> </a></div></li>
+                <li><a href="https://stackoverflow.com/users/14685185/sebastian09" target="_blank"><div id="stackoverflow" class="tag"> <div class="text">StackOverflow</div> </a></div></li>
+                <li><a href="https://www.youtube.com/channel/UCNBAfXouI2yRx_N8-sHH5Mw" target="_blank"><div id="youtube"  class="tag"> <div class="text">YouTube</div> </a></div></li>
+                <li><a href="mailto:ffuruh@gmail.com" target="_blank"><div id="gmail" class="tag"> <div  class="text">GMAIL</div> </a></div></li>
+
+            </ul>
+
+            <div class="drop-down" id="project" onclick="loadProjects()">👇 Projects</div>
+            <ul id="projects">
+
+                <li><a href="https://github.com/Sebastian09-09/Anigame-Sniper-Gen-3" target="_blank"><div id="as" class="tag"> <div class="text">Anigame Sniper</div> </a></div></li>
+                <li><a href="https://github.com/Sebastian09-09/PyTing" target="_blank"><div id="pyting" class="tag"> <div class="text">PyTing</div> </a></div></li>
+                <li><a href="https://github.com/Sebastian09-09/Termsite" target="_blank"><div id="tw" class="tag"> <div class="text">TermSite</div> </a></div></li>
+
+            </ul>
+
+        </div><br><br>
+    </body>
+    <script src="functions.js"></script>
+</html>
